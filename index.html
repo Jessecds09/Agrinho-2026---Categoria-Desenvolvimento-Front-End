@@ -1,1 +1,157 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Meu Portfólio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="logo">MeuPortfólio</h1>
+
+    <nav>
+      <button
+        class="menu-btn"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <button
+      id="theme-toggle"
+      aria-label="Alternar tema"
+    >
+      🌙
+    </button>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Desenvolvedor Front-End</h2>
+
+        <p>
+          Criando interfaces modernas, acessíveis e responsivas.
+        </p>
+
+        <a href="#projetos" class="btn">
+          Ver Projetos
+        </a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <h2>Sobre Mim</h2>
+
+      <p>
+        Sou estudante de desenvolvimento Front-End apaixonado por criar
+        experiências digitais modernas, acessíveis e funcionais.
+      </p>
+    </section>
+
+    <section id="projetos" class="section">
+      <h2>Projetos</h2>
+
+      <div class="cards">
+
+        <article class="card">
+          <h3>Landing Page</h3>
+
+          <p>
+            Página responsiva criada com HTML e CSS.
+          </p>
+
+          <button class="btn detalhes-btn">
+            Detalhes
+          </button>
+        </article>
+
+        <article class="card">
+          <h3>Lista de Tarefas</h3>
+
+          <p>
+            Aplicação JavaScript para organização de tarefas.
+          </p>
+
+          <button class="btn detalhes-btn">
+            Detalhes
+          </button>
+        </article>
+
+        <article class="card">
+          <h3>Portfólio</h3>
+
+          <p>
+            Projeto pessoal com foco em acessibilidade e design.
+          </p>
+
+          <button class="btn detalhes-btn">
+            Detalhes
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <h2>Contato</h2>
+
+      <form id="contact-form">
+
+        <label for="nome">Nome</label>
+        <input
+          type="text"
+          id="nome"
+          required
+        >
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          required
+        >
+
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          id="mensagem"
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn">
+          Enviar
+        </button>
+
+      </form>
+
+      <p id="form-message"></p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>
+      © 2026 - Desenvolvido por Você
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+```
 
